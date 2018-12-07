@@ -53,6 +53,7 @@ public class GitRequest  {
     private String baseSha;
     private String requestType;
     private List<Commit> commits;
+    private List<String> labels;
 
 
     public long getNumberOfChanges() {
@@ -278,6 +279,14 @@ public class GitRequest  {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+    public List<String> getLabels() {
+        return this.labels;
+    }
+
+    public void setLabels(List<String> labels) {
+        this.labels = labels;
     }
 
     public List<Review> getReviews() {
